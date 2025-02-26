@@ -48,8 +48,8 @@
     });
 
 
-    // Causes progress
-    $('.causes-progress').waypoint(function () {
+    // Activities progress
+    $('.activities-progress').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
