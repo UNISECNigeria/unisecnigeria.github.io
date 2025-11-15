@@ -1,0 +1,19 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/unisecn1/public_html/
+
+    # Copy HTML files
+    - /bin/cp -f *.html $DEPLOYPATH
+
+    # Copy folders
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R lib $DEPLOYPATH
+    - /bin/cp -R scss $DEPLOYPATH
+    - /bin/cp -R favicon $DEPLOYPATH
+
+    # Extra files
+    - /bin/cp -f LICENSE.txt $DEPLOYPATH
+    - /bin/cp -f README.md $DEPLOYPATH
